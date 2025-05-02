@@ -1,0 +1,7 @@
+<h1>Lista de Pacientes</h1>
+<ul>
+{% for todo in todo_list %}
+<li>{{ todo.title }} </li>
+{% endfor %}
+</ul>
+<a href="{% url 'paciente_create' %}">Cadastrar Novo Paciente</a>
