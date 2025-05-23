@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -18,6 +19,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
 ]
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'core', 'static')]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
