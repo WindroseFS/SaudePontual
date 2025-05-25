@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Pontual</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Saúde Pontual</h1>
+            <p>Cuidando de você com pontualidade</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#appointment" class="nav-link">Agendamento</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <div id="carousel" class="carousel"></div>
+        <section id="appointment" class="appointment">
+            <h2>Marque sua Consulta</h2>
+            <div class="filter">
+                <label for="specialty">Especialidade:</label>
+                <select id="specialty" class="select-specialty" onchange="filterDoctors()">
+                    <option value="Todas">Todas</option>
+                    <option value="Cardiologia">Cardiologia</option>
+                    <option value="Dermatologia">Dermatologia</option>
+                    <option value="Ortopedia">Ortopedia</option>
+                </select>
+            </div>
+            <div id="doctors-list" class="doctors-list"></div>
+            <div id="times" class="times"></div>
+            <div id="confirmation" class="confirmation hidden"></div>
+        </section>
+    </main>
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <p>Contato: (12) 1234-5678 | contato@saudepontual.com</p>
+            <p>© 2025 Saúde Pontual. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
