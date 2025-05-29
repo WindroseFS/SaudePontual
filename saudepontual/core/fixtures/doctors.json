@@ -1,0 +1,26 @@
+[
+  {
+    "model": "core.doctor",
+    "pk": 1,
+    "fields": {
+      "name": "Dra. Ana Silva",
+      "specialty": "Cardiologia"
+    }
+  },
+  {
+    "model": "core.doctor",
+    "pk": 2,
+    "fields": {
+      "name": "Dr. Carlos Souza",
+      "specialty": "Dermatologia"
+    }
+  },
+  {
+    "model": "core.doctor",
+    "pk": 3,
+    "fields": {
+      "name": "Dra. Paula Mendes",
+      "specialty": "Ortopedia"
+    }
+  }
+]
